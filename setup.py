@@ -23,6 +23,8 @@ setup(
         'ICD',
         'ICD9',
         'ICD10',
+        'ICD-9',
+        'ICD-10',
         'meaningful use',
         'healthcare',
         'health',
@@ -50,6 +52,6 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
-        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Software Development :: Libraries :: Python Modules'
     ]
 )

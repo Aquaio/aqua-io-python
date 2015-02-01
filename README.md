@@ -1,6 +1,12 @@
 # aqua-io-python
 
-Official Aqua-io API library client for python
+Official [Aqua-io](https://aqua.io) API library client for python. Currently covers Aqua.io's ICD-9 and ICD-10 APIs.
+
+## Getting Started
+
+To use the Aqua.io API, you need to have proper API credentials, which you can get for free by [signing up](https://aqua.io/developers/sign_up).
+
+You may also want to read up on [the API documentation](https://aqua.io/codes).
 
 ## Installation
 
