@@ -99,7 +99,7 @@ When the value is set to __raw__, don't modify the body at all.
 
 When the value is set to __json__, JSON encode the body.
 
-### ICD-9 api
+### ICD-9
 
 Returns an ICD-9 code.
 
@@ -163,7 +163,7 @@ The following arguments are required:
 response = icd9.search_by_name_or_description("west nile", options)
 ```
 
-### ICD-10 api
+### ICD-10
 
 Returns an ICD-10 code.
 
