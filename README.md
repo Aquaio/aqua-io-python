@@ -35,13 +35,15 @@ import aqua_io
 ```python
 client = aqua_io.Client({ 'client_id': '09a8b7', 'client_secret': '1a2b3' }, client_options)
 
-token = client.access_token.retrieve(options)
+token = client.access_token().retrieve()
+
+access_token = {'access_token': token.body['access_token']}
 ```
 
 ##### All other API calls require an access token
 
 ```python
-client = aqua_io.Client(token, client_options)
+client = aqua_io.Client(access_token, client_options)
 ```
 
 ### Client Options
@@ -58,13 +60,13 @@ The following options are available while instantiating a client:
 __All the callbacks provided to an api call will receive the response as shown below__
 
 ```python
-response = client.icd9.top_level_codes(options)
+response = client.icd9().top_level_codes()
 
 response.code
 # >>> 200
 
 response.headers
-# >>> {'x-server': 'apache'}
+# >>> {'x-server': 'nginx/1.6.2', ... }
 ```
 
 ##### JSON response
@@ -73,7 +75,7 @@ When the response sent by server is __json__, it is decoded into a dict
 
 ```python
 response.body
-# >>> {'user': 'pksunkara'}
+# >>> [{u'short_description': u'INFECTIOUS AND PARASIT...', u'api_path': u'icd9/001-139', u'name': u'001-139', u'description': u'INFECTIOUS AND PARASITIC DISEASES (001-139)'},  ... ]
 ```
 
 ### Method Options
@@ -93,19 +95,9 @@ Set __request_type__ in options to modify the body accordingly
 
 When the value is set to __raw__, don't modify the body at all.
 
-```python
-body = 'username=pksunkara'
-# >>> 'username=pksunkara'
-```
-
 ##### JSON request
 
 When the value is set to __json__, JSON encode the body.
-
-```python
-body = {'user': 'pksunkara'}
-# >>> '{"user": "pksunkara"}'
-```
 
 ### ICD-9 api
 
