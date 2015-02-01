@@ -236,17 +236,13 @@ response = icd10.search_by_name_or_description("rubella", options)
 ```
 
 ## Contributors
-Here is a list of [Contributors](https://github.com/aquaio/aqua-io-python
-aqua-io-python
-aqua-io-python/contributors)
+Here is a list of [Contributors](https://github.com/aquaio/aqua-io-python/contributors)
 
 ## License
 MIT
 
 ## Bug Reports
-Report [here](https://github.com/aquaio/aqua-io-python
-aqua-io-python
-aqua-io-python/issues).
+Report [here](https://github.com/aquaio/aqua-io-python/issues).
 
 ## Contact
 Michael Carroll at Aqua.io
