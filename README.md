@@ -1,6 +1,6 @@
 # aqua-io-python
 
-Official [Aqua-io](https://aqua.io) API library client for python. Currently covers Aqua.io's ICD-9 and ICD-10 APIs.
+Official [Aqua-io](https://aqua.io) API library client for Python. Currently covers Aqua.io's ICD-9 and ICD-10 APIs.
 
 ## Getting Started
 
